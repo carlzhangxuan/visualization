@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>::Function::</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="jquery.js"></script>
+<script src="arbor.js"></script>
+<script type='text/javascript' lang='javascript'>
+var ws = new WebSocket('ws://115.28.3.162:8888');
+
+        ws.onopen = function () {
+        };
+
+        ws.onmessage = function(evt) {
+          $("#viewport").html(evt.data);
+        };
+
+</script>
+</head>
+  <body>
+	<canvas id="viewport" width="800" height="600"></canvas>
+
+
+  </body>
+</html>
+

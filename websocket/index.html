@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>::GraphDatabase-Neo4J-Demo::</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="arbor.js"></script>
+<script language="javascript" type="text/javascript" src="arbor-tween.js"></script>
+<script language="javascript" type="text/javascript" src="graphics.js"></script>
+<script language="javascript" type="text/javascript" src="renderer.js"></script>
+<script type='text/javascript' lang='javascript'>
+var ws = new WebSocket('ws://115.28.3.162:8888/websocket');
+
+        ws.onopen = function () {
+        };
+
+        ws.onmessage = function(evt) {
+          $("body").html(evt.data);
+        };
+
+</script>
+</head>
+  <body>
+	<div class='top' >GraphDatabase</div>
+
+
+  </body>
+</html>
+

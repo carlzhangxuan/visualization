@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gephi.org/gexf" xmlns:viz="http://www.gephi.org/gexf/viz">
+<graph type="static">
+       <nodes>
+      <node id="0" value="test1"></node>
+      <node id="1" value="villas"></node>
+      <node id="2" value="jetstar"></node>
+      <node id="3" value="test2"></node>
+    </nodes>
+    <edges>
+      <edge id="0" source="0" target="1" ></edge>
+      <edge id="1" source="0" target="3" ></edge>
+    </edges>
+  </graph>
+</gexf>

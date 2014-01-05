@@ -1,0 +1,9 @@
+{"nodes":[
+{"name":"Agricultural 'waste'"},
+{"name":"Bio-conversion"},
+{"name":"Wind"}
+],
+"links":[
+{"source":0,"target":1,"value":1200},
+{"source":1,"target":2,"value":1200}
+]}

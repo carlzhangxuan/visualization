@@ -1,0 +1,10 @@
+.node {stroke: #666;
+	stroke-width: 1.5px;}
+.link {
+stroke: #000;
+stroke-opacity:.5;
+}
+.text{
+}
+div{width:800px;margin:0 auto;background:#fff;}
+

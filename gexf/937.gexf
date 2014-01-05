@@ -1,0 +1,2436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-07-18">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="自由行" label="自由行">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-441.84103" y="169.84366" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="phuket" label="phuket">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-119.08081" y="318.1069" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="艺龙" label="艺龙">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="168.5474" y="-133.14406" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="agod" label="agod">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="11.5"></viz:size>
+        <viz:position x="-59.11256" y="26.472687" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="boracay" label="boracay">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="89.12482" y="450.38785" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="马蜂窝" label="马蜂窝">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="417.92847" y="263.7509" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="国泰航空" label="国泰航空">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="214.17284" y="19.77079" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="订房中心" label="订房中心">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="270.2673" y="-344.53275" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="香格里拉" label="香格里拉">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="118.302826" y="-542.9649" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="大阪" label="大阪">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-127.42895" y="-359.1419" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="海滩" label="海滩">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-479.77994" y="338.74594" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="asiawebidrec" label="asiawebidrec">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="270.93417" y="207.8323" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="airasia.com" label="airasia.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-187.34444" y="507.2962" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="hrs" label="hrs">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="307.16754" y="-363.33734" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="resort" label="resort">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="71.85659" y="278.60614" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="卡塔" label="卡塔">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-486.2117" y="302.4459" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="行李票" label="行李票">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-215.90057" y="-430.49365" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="dingfang" label="dingfang">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="286.2673" y="-405.6808" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="订房" label="订房">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="194.26208" y="-179.92545" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="adoda" label="adoda">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="13.0"></viz:size>
+        <viz:position x="87.90879" y="-187.6107" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="庇" label="庇">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-94.22957" y="93.05184" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="patong" label="patong">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-116.3621" y="286.02356" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="巴东" label="巴东">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-398.216" y="295.04013" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="退票" label="退票">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-204.54152" y="-392.41135" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="expedia.com" label="expedia.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="455.5318" y="261.70633" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="攀牙湾" label="攀牙湾">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-440.1104" y="320.62805" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="网" label="网">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-2.2721624" y="-327.9386" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="ayana" label="ayana">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-74.493484" y="-402.93524" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="岛" label="岛">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="82.87179" y="-283.8212" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="crowne" label="crowne">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="544.78143" y="-95.618416" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="naraya" label="naraya">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-421.10263" y="-138.42467" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="下午茶" label="下午茶">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-607.45624" y="-14.398766" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="亚" label="亚">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="70.560005" y="-330.64902" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="laguna" label="laguna">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="159.43542" y="483.08093" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="asiawebdirect" label="asiawebdirect">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="32.5"></viz:size>
+        <viz:position x="112.28185" y="75.73672" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="皮皮岛" label="皮皮岛">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-446.94855" y="366.65274" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="素贴山" label="素贴山">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-575.7556" y="177.24887" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="水灯节" label="水灯节">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-586.6741" y="28.92982" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="最多" label="最多">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="148.21213" y="-512.5334" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="塞班岛" label="塞班岛">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-440.1933" y="267.93613" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="aogoda" label="aogoda">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="14.5"></viz:size>
+        <viz:position x="56.283604" y="-215.37082" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="蚂" label="蚂">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="521.5407" y="221.62984" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="酒店订房" label="酒店订房">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="347.9677" y="-288.03275" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="入住" label="入住">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="9.998755" y="-552.8014" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="淘宝" label="淘宝">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="368.36304" y="-119.22853" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="hangzhou" label="hangzhou">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-268.19464" y="488.3581" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="agaoda" label="agaoda">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="38.424274" y="-306.93884" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="订票" label="订票">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-321.04907" y="-297.80374" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="yahang" label="yahang">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-340.74066" y="-260.4744" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="人" label="人">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="60.386932" y="-515.0964" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="预定" label="预定">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="104.3122" y="-502.31003" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="adoga" label="adoga">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="17.5"></viz:size>
+        <viz:position x="-18.437902" y="-93.15993" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="villa" label="villa">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="120.71787" y="250.68587" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="丹" label="丹">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="17.460186" y="-505.36746" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="预订" label="预订">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="21.699047" y="-196.39772" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="sheraton" label="sheraton">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="510.9402" y="-69.26428" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="airasiago" label="airasiago">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-227.85822" y="504.30392" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="agada" label="agada">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="32.5"></viz:size>
+        <viz:position x="17.506466" y="-139.26205" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="malaysia" label="malaysia">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-300.0935" y="520.9126" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="甲米" label="甲米">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-408.54324" y="169.99658" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="酒店" label="酒店">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="85.89686" y="-115.018936" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="曼谷市" label="曼谷市">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-515.9548" y="-141.78976" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="bellevue" label="bellevue">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="481.2948" y="118.45189" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="蜂窝" label="蜂窝">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="547.0712" y="184.09335" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="上海" label="上海">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-143.12112" y="-136.89511" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="bali" label="bali">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="224.22029" y="467.90768" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="特价机票" label="特价机票">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-302.6977" y="-425.88846" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="夜市" label="夜市">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-637.5078" y="6.0448527" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="转机" label="转机">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-318.14325" y="-393.91278" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="皇宫" label="皇宫">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-460.1926" y="-123.123276" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="不" label="不">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="241.24644" y="244.30965" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="tiket2.com" label="tiket2.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-180.5392" y="464.86838" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="泰国" label="泰国">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="159.97708" y="232.3663" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="曼谷唐人街" label="曼谷唐人街">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-488.25192" y="-88.3894" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="booking" label="booking">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="34.93376" y="-17.146864" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="皇帝" label="皇帝">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="107.93622" y="-412.83002" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="百酷" label="百酷">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="363.309" y="-371.21133" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="网上" label="网上">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-38.14391" y="-303.88623" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="airways" label="airways">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-261.42346" y="537.1981" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="官网" label="官网">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="124.928085" y="-37.93705" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="bangkok" label="bangkok">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="31.873978" y="-61.999878" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="高达" label="高达">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="42.629807" y="-557.14404" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="california" label="california">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="549.1992" y="-46.090446" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="qingmai" label="qingmai">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-563.1184" y="133.32889" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="北戴河" label="北戴河">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="330.94058" y="-394.453" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="adago" label="adago">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="14.5"></viz:size>
+        <viz:position x="-86.055145" y="-172.82635" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="酒店预订" label="酒店预订">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="129.63785" y="-113.28217" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="book.com" label="book.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="525.5449" y="111.624405" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="www.booking.com" label="www.booking.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="429.52316" y="215.43759" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="暹罗" label="暹罗">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-436.56732" y="-72.3202" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="aogda" label="aogda">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="13.0"></viz:size>
+        <viz:position x="-38.324165" y="-200.21344" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="island" label="island">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="149.0598" y="525.53046" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="plaza" label="plaza">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="546.5202" y="-133.4443" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="lcct" label="lcct">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-277.97794" y="-326.21286" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="廊" label="廊">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-524.2976" y="-176.06276" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="普吉" label="普吉">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-296.22714" y="1.184019" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="marriott" label="marriott">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="573.3989" y="-164.97215" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="绒" label="绒">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="80.38677" y="-551.788" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="hotel.com" label="hotel.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="551.4262" y="140.73895" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="agoda" label="agoda">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="6.79102" y="-28.852674" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="马来西亚航空" label="马来西亚航空">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-231.2118" y="-351.69345" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="马尔代夫" label="马尔代夫">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-482.96167" y="263.0448" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="mai" label="mai">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-643.61" y="101.22889" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="samui" label="samui">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="36.367775" y="506.82605" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="boking" label="boking">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="42.382465" y="122.73063" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="asia" label="asia">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-22.457035" y="238.4336" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="清莱" label="清莱">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-572.511" y="75.69089" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="agoda.com" label="agoda.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="22.0"></viz:size>
+        <viz:position x="203.85956" y="-48.059563" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="素可泰" label="素可泰">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-615.4851" y="76.14974" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="hotle" label="hotle">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="542.8725" y="-189.5684" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="hotels" label="hotels">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="597.8171" y="-131.45958" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="langkawi" label="langkawi">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="33.57765" y="462.12418" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="bts" label="bts">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-429.2544" y="-211.12233" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="booking.com" label="booking.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="314.2575" y="74.114494" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="苏梅" label="苏梅">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-452.50552" y="-177.63715" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="泰铢" label="泰铢">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-376.29526" y="342.20166" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="chedi" label="chedi">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-615.151" y="159.58345" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="hote" label="hote">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="508.01126" y="-191.4747" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="duca" label="duca">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="509.6988" y="170.24902" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="值机" label="值机">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-257.50314" y="-436.09326" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="siam" label="siam">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-473.52933" y="-47.56388" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="路" label="路">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-36.88762" y="-507.08395" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="expedia" label="expedia">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="488.874" y="248.73068" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="flight" label="flight">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-242.58853" y="449.15042" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="airaisa" label="airaisa">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-310.53973" y="483.4879" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="热浪岛" label="热浪岛">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="229.03923" y="427.4346" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="india" label="india">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-178.03098" y="547.5272" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="hotel" label="hotel">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="351.52362" y="-41.621635" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="direct" label="direct">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="199.1827" y="262.8098" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="airasia" label="airasia">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="-171.85048" y="300.24728" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="预授权" label="预授权">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-13.021693" y="108.78206" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="tokio" label="tokio">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="589.83356" y="31.459023" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="nca" label="nca">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-605.81134" y="125.72664" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="芭堤雅" label="芭堤雅">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-479.59225" y="-228.40465" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="吉隆坡" label="吉隆坡">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-106.58438" y="-249.02455" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="asiadirect" label="asiadirect">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="203.24382" y="208.8348" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="redang" label="redang">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="154.02196" y="63.116978" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="行李托运" label="行李托运">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-254.73582" y="-392.75085" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="asiaweb" label="asiaweb">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="235.16354" y="171.97705" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="dmk" label="dmk">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-507.1647" y="-54.723064" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="网上订房" label="网上订房">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="379.22635" y="-252.15652" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="泰国旅游" label="泰国旅游">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-351.65118" y="71.09968" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="ctrip.com" label="ctrip.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="518.8558" y="-3.3386054" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="vb" label="vb">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="161.2698" y="-373.26172" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="centara" label="centara">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="73.76953" y="492.29718" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="改签" label="改签">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-388.18698" y="-323.2274" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="palace" label="palace">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="499.24506" y="-141.77493" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="hyatt" label="hyatt">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="610.7978" y="-12.987672" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="携程网" label="携程网">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="250.4567" y="-386.22104" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="巴厘岛" label="巴厘岛">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="187.79716" y="76.67927" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="kochin" label="kochin">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-333.62943" y="428.7227" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="inn" label="inn">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="243.25842" y="-34.159286" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="丹霞山" label="丹霞山">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="395.66492" y="-331.49918" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="spa" label="spa">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="119.276634" y="497.549" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="登机" label="登机">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-294.70792" y="-364.29803" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="携程" label="携程">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="181.23921" y="-97.20081" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="曼谷" label="曼谷">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="-286.44833" y="-78.48764" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="订房电话" label="订房电话">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="349.82596" y="-330.84647" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="asiawebdtrect" label="asiawebdtrect">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="277.9348" y="151.9943" z="0.0"></viz:position>
+        <viz:color r="255" g="0" b="0"></viz:color>
+      </node>
+      <node id="韩流" label="韩流">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-517.98456" y="-107.58419" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="phi" label="phi">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="183.91922" y="439.65598" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="intercontinental" label="intercontinental">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="571.1812" y="-9.628846" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="清迈" label="清迈">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="-390.47784" y="48.933323" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="airlines" label="airlines">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-140.72885" y="526.151" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="grand" label="grand">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="617.5702" y="-75.995865" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="支付" label="支付">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-26.447165" y="-542.74554" z="0.0"></viz:position>
+        <viz:color r="232" g="34" b="34"></viz:color>
+      </node>
+      <node id="pai" label="pai">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-637.30145" y="43.845684" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="芭提雅" label="芭提雅">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-189.22664" y="18.840519" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="beach" label="beach">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="195.57132" y="497.13306" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="airline" label="airline">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-222.28714" y="551.24115" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="穷游" label="穷游">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="219.30562" y="51.336594" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="四面佛" label="四面佛">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-489.1463" y="-192.82552" z="0.0"></viz:position>
+        <viz:color r="101" g="187" b="101"></viz:color>
+      </node>
+      <node id="行李" label="行李">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-351.8063" y="-394.529" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="兰卡威" label="兰卡威">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="90.1338" y="529.9321" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="亚行" label="亚行">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-339.3799" y="-342.19748" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="ramada" label="ramada">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="594.1224" y="-96.19435" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="苏梅岛" label="苏梅岛">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-197.11295" y="130.64438" z="0.0"></viz:position>
+        <viz:color r="67" g="209" b="67"></viz:color>
+      </node>
+      <node id="hostelworld.com" label="hostelworld.com">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="462.8294" y="165.09457" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="登机牌" label="登机牌">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-384.05893" y="-292.13016" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="renaissance" label="renaissance">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="600.5633" y="-48.37618" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="亚航" label="亚航">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="-185.59447" y="-191.70758" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="走遍欧洲" label="走遍欧洲">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="481.04752" y="208.32065" z="0.0"></viz:position>
+        <viz:color r="187" g="102" b="102"></viz:color>
+      </node>
+      <node id="订房间" label="订房间">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="305.618" y="-315.13116" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="托运行李" label="托运行李">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-380.36493" y="-360.13214" z="0.0"></viz:position>
+        <viz:color r="33" g="232" b="33"></viz:color>
+      </node>
+      <node id="radisson" label="radisson">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="547.63336" y="33.69773" z="0.0"></viz:position>
+        <viz:color r="164" g="136" b="136"></viz:color>
+      </node>
+      <node id="夜场" label="夜场">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="395.46875" y="-290.91528" z="0.0"></viz:position>
+        <viz:color r="209" g="68" b="68"></viz:color>
+      </node>
+      <node id="普吉岛" label="普吉岛">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="-277.1507" y="190.25864" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="airasian" label="airasian">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-290.36218" y="434.37643" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="airasiax" label="airasiax">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-341.5903" y="468.80328" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="villas" label="villas">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="140.0095" y="441.95627" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+      <node id="jetstar" label="jetstar">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-131.86943" y="488.97992" z="0.0"></viz:position>
+        <viz:color r="135" g="164" b="135"></viz:color>
+      </node>
+      <node id="长滩岛" label="长滩岛">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-407.8682" y="371.33218" z="0.0"></viz:position>
+        <viz:color r="0" g="255" b="0"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="自由行" target="清迈" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="自由行" target="普吉岛" label="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="phuket" target="resort" label="57.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="phuket" target="普吉岛" label="80.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="艺龙" target="订房" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="艺龙" target="booking" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agod" target="agoda" label="787.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="boracay" target="resort" label="51.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="马蜂窝" target="booking.com" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="国泰航空" target="booking" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="国泰航空" target="booking.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房中心" target="订房" label="101.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="香格里拉" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="大阪" target="adago" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="海滩" target="普吉岛" label="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="asiawebidrec" target="asiawebdirect" label="1000.0" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airasia.com" target="airasia" label="230.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hrs" target="订房" label="10.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="resort" target="booking" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="resort" target="agoda" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="resort" target="hotel" label="15.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="resort" target="普吉岛" label="13.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="卡塔" target="普吉岛" label="25.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="行李票" target="亚航" label="129.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="dingfang" target="订房" label="641.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房" target="adoga" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房" target="booking" label="18.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房" target="agoda" label="20.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房" target="agoda.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房" target="booking.com" label="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="adoda" target="agoda" label="792.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="庇" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="庇" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="patong" target="resort" label="60.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="patong" target="普吉岛" label="85.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="巴东" target="普吉岛" label="14.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="退票" target="亚航" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="expedia.com" target="booking.com" label="61.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="攀牙湾" target="普吉岛" label="133.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="网" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="ayana" target="aogda" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="岛" target="aogoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="岛" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="岛" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="crowne" target="hotel" label="84.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="naraya" target="曼谷" label="147.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="下午茶" target="清迈" label="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="laguna" target="resort" label="34.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="asiawebdirect" target="agoda" label="247.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="皮皮岛" target="普吉岛" label="77.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="素贴山" target="清迈" label="269.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="水灯节" target="清迈" label="69.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="最多" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="塞班岛" target="普吉岛" label="14.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="aogoda" target="agoda" label="862.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="蚂" target="booking.com" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店订房" target="订房" label="21.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="入住" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="淘宝" target="agoda.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hangzhou" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agaoda" target="agoda" label="392.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订票" target="亚航" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="yahang" target="亚航" label="222.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="人" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="预定" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="adoga" target="agoda" label="480.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="villa" target="resort" label="11.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="villa" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="丹" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="预订" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="预订" target="booking" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="sheraton" target="hotel" label="66.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airasiago" target="airasia" label="78.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agada" target="agoda" label="552.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="malaysia" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="甲米" target="清迈" label="11.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="甲米" target="普吉岛" label="27.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店" target="adoga" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店" target="agoda.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷市" target="曼谷" label="208.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="bellevue" target="booking.com" label="10.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="蜂窝" target="booking.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="上海" target="adoga" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="bali" target="resort" label="13.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="特价机票" target="亚航" label="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="夜市" target="清迈" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="转机" target="亚航" label="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="皇宫" target="曼谷" label="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="不" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="tiket2.com" target="airasia" label="285.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="泰国" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷唐人街" target="曼谷" label="232.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking" target="订房" label="18.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking" target="agoda" label="15.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking" target="booking.com" label="12.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking" target="亚航" label="12.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="皇帝" target="aogoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="百酷" target="订房" label="23.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="网上" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airways" target="airasia" label="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="官网" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="官网" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="官网" target="agoda.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="bangkok" target="booking" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="bangkok" target="hotel" label="24.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="bangkok" target="曼谷" label="51.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="高达" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="california" target="hotel" label="13.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="qingmai" target="清迈" label="731.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="北戴河" target="订房" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="adago" target="agoda" label="617.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店预订" target="订房" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店预订" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店预订" target="booking" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="酒店预订" target="agoda.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="book.com" target="booking.com" label="451.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="www.booking.com" target="booking.com" label="189.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="暹罗" target="曼谷" label="47.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="aogda" target="agoda" label="535.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="island" target="resort" label="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="plaza" target="hotel" label="31.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="lcct" target="亚航" label="26.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="廊" target="曼谷" label="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="普吉" target="清迈" label="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="普吉" target="亚航" label="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="普吉" target="普吉岛" label="59.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="marriott" target="hotel" label="61.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="绒" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotel.com" target="booking.com" label="80.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="agod" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="订房" label="27.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="adoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="asiawebdirect" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="aogoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="adoga" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="booking" label="23.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="adago" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="aogda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="agoda.com" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="booking.com" label="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda" target="airasia" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="马来西亚航空" target="亚航" label="12.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="马尔代夫" target="普吉岛" label="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="mai" target="清迈" label="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="samui" target="resort" label="69.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="boking" target="booking" label="191.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="asia" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="asia" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="清莱" target="清迈" label="136.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda.com" target="agoda" label="462.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="agoda.com" target="booking.com" label="169.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="素可泰" target="清迈" label="82.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotle" target="hotel" label="300.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotels" target="hotel" label="37.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="langkawi" target="resort" label="62.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="bts" target="曼谷" label="48.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking.com" target="订房" label="39.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking.com" target="booking" label="73.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking.com" target="agoda" label="31.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="booking.com" target="agoda.com" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="苏梅" target="曼谷" label="15.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="泰铢" target="普吉岛" label="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="chedi" target="清迈" label="217.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hote" target="hotel" label="149.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="duca" target="booking.com" label="19.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="值机" target="亚航" label="29.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="siam" target="曼谷" label="75.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="路" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="expedia" target="booking.com" label="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="flight" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airaisa" target="airasia" label="408.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="热浪岛" target="resort" label="16.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="india" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotel" target="resort" label="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotel" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotel" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotel" target="booking" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotel" target="agoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotel" target="agoda.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hotel" target="booking.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="direct" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airasia" target="agoda" label="18.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="预授权" target="booking" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="tokio" target="hotel" label="110.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="nca" target="清迈" label="61.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="芭堤雅" target="曼谷" label="48.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="吉隆坡" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="吉隆坡" target="亚航" label="18.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="asiadirect" target="asiawebdirect" label="1000.0" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="redang" target="resort" label="128.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="redang" target="订房" label="12.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="行李托运" target="亚航" label="12.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="asiaweb" target="asiawebdirect" label="92.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="dmk" target="曼谷" label="121.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="网上订房" target="订房" label="30.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="泰国旅游" target="曼谷" label="9.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="泰国旅游" target="清迈" label="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="泰国旅游" target="普吉岛" label="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="ctrip.com" target="hotel" label="141.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="vb" target="adoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="centara" target="resort" label="71.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="改签" target="亚航" label="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="palace" target="hotel" label="17.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hyatt" target="hotel" label="39.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="携程网" target="订房" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="巴厘岛" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="巴厘岛" target="booking" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="巴厘岛" target="booking.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="kochin" target="airasia" label="157.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="inn" target="booking" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="inn" target="hotel" label="23.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="丹霞山" target="订房" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="spa" target="resort" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="登机" target="亚航" label="10.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="携程" target="订房" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="携程" target="booking" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷" target="booking" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷" target="agoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷" target="清迈" label="15.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷" target="亚航" label="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="曼谷" target="普吉岛" label="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房电话" target="订房" label="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="asiawebdtrect" target="asiawebdirect" label="675.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="韩流" target="曼谷" label="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="phi" target="resort" label="24.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="intercontinental" target="hotel" label="90.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="清迈" target="booking" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="清迈" target="agoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="清迈" target="曼谷" label="50.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="清迈" target="普吉岛" label="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airlines" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="grand" target="hotel" label="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="支付" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="pai" target="清迈" label="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="芭提雅" target="adoga" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="芭提雅" target="booking" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="芭提雅" target="曼谷" label="61.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="芭提雅" target="清迈" label="10.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="芭提雅" target="普吉岛" label="11.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="beach" target="resort" label="10.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airline" target="airasia" label="1.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="穷游" target="booking" label="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="穷游" target="booking.com" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="四面佛" target="曼谷" label="45.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="行李" target="亚航" label="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="兰卡威" target="resort" label="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚行" target="亚航" label="93.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="ramada" target="hotel" label="78.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="苏梅岛" target="resort" label="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="苏梅岛" target="曼谷" label="43.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="苏梅岛" target="清迈" label="11.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="苏梅岛" target="普吉岛" label="24.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="hostelworld.com" target="booking.com" label="170.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="登机牌" target="亚航" label="10.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="renaissance" target="hotel" label="29.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="订房" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="asiawebdirect" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="agaoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="agada" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="booking" label="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="adago" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="agoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="airasia" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="曼谷" label="10.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="亚航" target="清迈" label="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="走遍欧洲" target="booking.com" label="17.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="订房间" target="订房" label="15.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="托运行李" target="亚航" label="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="radisson" target="hotel" label="117.0" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="夜场" target="订房" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="普吉岛" target="resort" label="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="普吉岛" target="agoda" label="1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="普吉岛" target="曼谷" label="12.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="普吉岛" target="清迈" label="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airasian" target="airasia" label="1000.0" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="airasiax" target="airasia" label="1000.0" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="villas" target="resort" label="54.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="jetstar" target="airasia" label="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="长滩岛" target="普吉岛" label="10.0" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

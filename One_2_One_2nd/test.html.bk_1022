@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>neo4j</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="test.css" />
+<body>
+<div class = "wrapper" ><p id = "chart"><div>
+<p>
+  <label for="amount">Volume:</label>
+  <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" />
+</p>
+
+<div id="slider-vertical" style="height: 200px;"></div>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="../js/d3.js"></script>
+<script src="../js/sankey.js"></script>
+<script src="test.js"></script>
+</body>
+<html>
