@@ -1,0 +1,6 @@
+[
+{"name":"A","size":2023,"imports":["B", "C", "D"]},
+{"name":"B","size":2023,"imports":["A"]},
+{"name":"C","size":2023,"imports":["A"]},
+{"name":"D","size":2023,"imports":["A"]}
+]

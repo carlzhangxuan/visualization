@@ -42,11 +42,11 @@ width:800px;
 
 <div class = "wrapper" ><p id = "chart"><div>
 <!--<script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>-->
-<script src="../js/d3.js"></script>
-<script src="../js/sankey.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/sankey.js"></script>
 <script>
 
-var margin = {top: 1, right: 1, bottom: 6, left: 1},
+var margin = {top: 1, right: 30, bottom: 6, left: 1},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -66,6 +66,7 @@ var sankey = d3.sankey()
     .size([width, height]);
 
 var path = sankey.link();
+//console.log(path)
 
 //d3.json("data/jiudian_agoda_6_text.json", function(energy) {
 //d3.json("jiudian_agoda_over5_text.json", function(energy) {
@@ -99,9 +100,11 @@ d3.json("data/energy.json", function(energy) {
       .on("drag", dragmove));
 
   node.append("rect")
-      .attr("height", function(d) { return d.dy; })
-      .attr("width", sankey.nodeWidth())
-      .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
+      .attr("height", function(d) { return d.dy;})
+      //.attr("height", 10)
+      .attr("width", sankey.nodeWidth()+29)
+      //.style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
+      .style("fill", function(d) { return d.color;})
       .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
     .append("title")
       .text(function(d) { return d.name + "\n" + format(d.value); });
