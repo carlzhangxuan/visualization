@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>neo4j</title>
+<title>Path2</title>
 <style>
 body {
   background: #fcfcfa;
@@ -46,7 +46,7 @@ width:800px;
 <script src="js/sankey.js"></script>
 <script>
 
-var margin = {top: 1, right: 101, bottom: 6, left: 1},
+var margin = {top: 1, right: 51, bottom: 6, left: 1},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -102,12 +102,13 @@ d3.json("data/jiudianyuding_agoda_7.json", function(energy) {
   node.append("rect")
       .attr("height", function(d) { return d.dy  ;})
       //.attr("height", 10)
-      .attr("width", sankey.nodeWidth()+100)
+      .attr("width", sankey.nodeWidth())
       //.style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
       .style("fill", function(d) { return d.color;})
-      .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
+     // .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
     .append("title")
-      .text(function(d) { return d.name + "\n" + format(d.value); });
+      //.text(function(d) { return d.name + "\n" + format(d.value); });
+      .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
 
   node.append("text")
       .attr("x", -6)
