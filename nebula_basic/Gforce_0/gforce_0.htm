@@ -39,28 +39,30 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 d3.json("../data/miserables.json", function(error, graph) {
-  root = graph
+ root = graph
   update();
 });
   
 function update(){
+
+  var nodes = root.nodes,
+      links = root.links;
+
   force
-      .nodes(root.nodes)
-      .links(root.links)
+      .nodes(nodes)
+      .links(links)
       .start();
 
    link = svg.selectAll(".link")
-      .data(root.links)
+      .data(links)
     .enter().insert("svg:line", ".node")
       .attr("class", "link")
-      .attr("x1", function(d) { return d.source.x; })
-      .attr("y1", function(d) { return d.source.y; })
-      .attr("x2", function(d) { return d.target.x; })
-      .attr("y2", function(d) { return d.target.y; });
    //   .style("stroke-width", function(d) { return Math.sqrt(d.value); });
-
+  
+ //  link.exit().remove();
+  
    node = svg.selectAll(".node")
-      .data(root.nodes)
+      .data(nodes)
     .enter().append("svg:circle")
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
@@ -72,6 +74,7 @@ function update(){
 
   node.append("title")
       .text(function(d) { return d.name; });
+   // node.exit().remove();
 
 }
 
