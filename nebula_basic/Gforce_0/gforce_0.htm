@@ -76,12 +76,14 @@ function update(){
 }
 
 function click(d) {
-  console.log(d.name);
-  console.log(typeof(root["nodes"][1]["name"]));
-  console.log(root["nodes"]);
-  root["nodes"].push({"name":"test", group:1})
- // root["nodes"]["test"].push({"name": "test", group : 1})
-  console.log(root["nodes"]);
+  console.log(d);
+  //console.log(root["nodes"]);
+  console.log(root["links"]);
+  current = "test";
+  root["nodes"].push({"name":current, group:1});
+  root["links"].push({"source":d,"target":{"index":root["nodes"].length, "weight":1, "name":current}, "value":1});
+ //root["nodes"]["test"].push({"name": "test", group : 1})
+  //console.log(root["nodes"][root["nodes"].length -1]);
   update();
 }
 
