@@ -1,0 +1,12 @@
+
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "vis",
+   "children": [
+    {"name": "flare", "size": 1000}
+   ]
+  }
+ ]
+}
