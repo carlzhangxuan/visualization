@@ -21,11 +21,15 @@
 var test = [] 
 
 var width = 960,
-    height = 500;
+    height = 500,
+    node,
+    link,
+    root;
 
 var color = d3.scale.category20();
 
 var force = d3.layout.force()
+    .on("tick", tick)
     .charge(-120)
     .linkDistance(30)
     .size([width, height]);
@@ -36,7 +40,6 @@ var svg = d3.select("body").append("svg")
 
 d3.json("../data/miserables.json", function(error, graph) {
   root = graph
-
   update();
 });
   
@@ -46,45 +49,64 @@ function update(){
       .links(root.links)
       .start();
 
-  var link = svg.selectAll(".link")
+   link = svg.selectAll(".link")
       .data(root.links)
-    .enter().append("line")
+    .enter().insert("svg:line", ".node")
       .attr("class", "link")
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
    //   .style("stroke-width", function(d) { return Math.sqrt(d.value); });
 
-  var node = svg.selectAll(".node")
+   node = svg.selectAll(".node")
       .data(root.nodes)
-    .enter().append("circle")
+    .enter().append("svg:circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
       .attr("class", "node")
       .attr("r", 5)
      // .style("fill", function(d) { return color(d.group); })
      .on("click", click)
-      //.call(force.drag);
+      .call(force.drag);
 
   node.append("title")
       .text(function(d) { return d.name; });
 
-  force.on("tick", function() {
-    link.attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
+}
 
-    node.attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
-  });
+function tick() {
+  link.attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node.attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
 }
 
 function click(d) {
   console.log(d);
   //console.log(root["nodes"]);
-  console.log(root["links"][0]);
-  current = "test";
-  root["nodes"].push({"name":current, group:1});
-  root["links"].push({"source":d,"target":root["nodes"][root["nodes"].length-1]});
+ // console.log(root["links"][0]);
+  //current = "test";
+  //target = {"name":current, group:1, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
+   //target = {"name":current, group:1};
+  //root["nodes"].push(target);
+  //console.log(d)
+  //root["links"].push({"source":d,"target":target, "value":1});
  //root["nodes"]["test"].push({"name": "test", group : 1})
-  //console.log(root["nodes"][root["nodes"].length -1]);
+  //root["links"].push({"source":d.index,"target":root["nodes"][root["nodes"].length -1], "value":1});
+  /*console.log(target.x);
+  console.log(target.y);
+  console.log(d.x);
+  console.log(d.y);
   update();
+ console.log(root)
+  //console.log(root["links"][root["links"].length -1])*/
+  //update();
+
 }
+
 
 </script>
