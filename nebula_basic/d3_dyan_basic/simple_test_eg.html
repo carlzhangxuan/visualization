@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<script src="../js/d3_v3.js"></script>
+<div id="demo"><p class="value">Hint: You can click on the dots.</p>
+
+<div>
+<script>
 JSONData = [
   { "id": 3, "created_at": "Sun May 05 2013", "amount": 12000},
   { "id": 1, "created_at": "Mon May 13 2013", "amount": 2000},
@@ -5,7 +13,6 @@ JSONData = [
   { "id": 4, "created_at": "Thu May 09 2013", "amount": 15000},
   { "id": 5, "created_at": "Mon Jul 01 2013", "amount": 16000}
 ];
-
 
 (function() {
   var data = JSONData.slice()
@@ -25,9 +32,21 @@ JSONData = [
   .attr("width", 300)
   .attr("height", 200)
 
-  svg.selectAll("circle").data(data).enter()
-   .append("svg:circle")
+  node = svg.selectAll("circle").data(data).enter()
+   .append("svg:g")
+   .attr("cx", function(d) { return x(dateFn(d)) })
+   .attr("cy", function(d) { return y(amountFn(d)) });
+
+   node.append("svg:circle")
    .attr("r", 4)
    .attr("cx", function(d) { return x(dateFn(d)) })
-   .attr("cy", function(d) { return y(amountFn(d)) }) 
+   .attr("cy", function(d) { return y(amountFn(d)) });
+
+   node.append("svg:text")
+   .attr("x", function(d) { return x(dateFn(d)) })
+   .attr("y", function(d) { return y(amountFn(d)) })
+   .text("test");
+
 })();
+</script>
+</body>
