@@ -100,14 +100,16 @@ function tick() {
 function click(d) {
   //console.log(d);
   console.log(d.name)
-  /*
+  
   current = "test";
   target = {"name":current, group:1, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
   target1 = {"name":current, group:1, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
   root["nodes"].push(target);
   root["nodes"].push(target1);
   root["links"].push({"target":d.index,"source":root["nodes"][root["nodes"].length -2], "value":1});
-  root["links"].push({"target":d.index,"source":root["nodes"][root["nodes"].length -1], "value":1});*/
+  root["links"].push({"target":d.index,"source":root["nodes"][root["nodes"].length -1], "value":1});
+
+  /*
   root.nodes.splice(d.index, 1);
   
   var adj = [];
@@ -123,7 +125,7 @@ function click(d) {
   for (i = 0; i < o_adjl; i++){
     root.links.splice(adj[i]-vn, 1);
     vn++;
-  }
+  }*/
 
   //console.log(root);
   update();
