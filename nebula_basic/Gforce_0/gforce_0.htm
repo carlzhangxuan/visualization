@@ -33,7 +33,7 @@ var color = d3.scale.category20();
 var force = d3.layout.force()
     .on("tick", tick)
     .charge(-120)
-    .linkDistance(30)
+    .linkDistance(100)
     .size([width, height]);
 
 var svg = d3.select("body").append("svg")
@@ -79,7 +79,11 @@ function update(){
       textA.attr("x", function(d) { return d.x; })
       .attr("y", function(d) { return d.y; })
       .attr("class", "text")
-      .text(function(d) {return d.name});
+      .attr("font-family", "Arial")
+      .attr("fill-opacity", 0.9)
+      .attr("font-size", 3)
+      .on("click", click)
+      .text(function(d) {return (d.group == 1)?d.name:''});
   
   textA.exit().remove();
 }
