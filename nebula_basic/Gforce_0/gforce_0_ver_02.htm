@@ -10,22 +10,17 @@
 
 .link {
   stroke: #999;
-  stroke-opacity: .2;
+  stroke-opacity: .6;
 }
 
 .text{
 
-}
-
-.crtl{
-width : 960px;
 
 }
 
 </style>
 <body>
 <script src="../js/d3_v3.js"></script>
-<script src="../js/jquery-2.1.0.min.js"></script>
 <script>
 
 var test = [] 
@@ -40,14 +35,6 @@ var force = d3.layout.force()
     .charge(-120)
     .linkDistance(100)
     .size([width, height]);
-
-var button = d3.select("body").append("div")
-      .attr("class", "ctrl")
-      .attr("font-family", "Arial")
-      .attr("fill-opacity", 0.9)
-      .attr("font-size", 5)
-      .attr("id", "top_b1")
-      .text("adding...");
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -77,10 +64,10 @@ function update(){
   
   node.enter().append("svg:circle")
       .attr("class", "node")
-      .attr("r", function(d) {return d.group})
-      .on("click", click_add)
+      .attr("r", 5)
+      .on("click", click);
       //.on("mouseover", mouseover);
-      .call(force.drag);
+      //.call(force.drag);
   node.exit().remove();
       
   d3.select(".text").remove();
@@ -94,13 +81,11 @@ function update(){
       .attr("class", "text")
       .attr("font-family", "Arial")
       .attr("fill-opacity", 0.9)
-      .attr("font-size", 5)
-      //.on("click", click_)
-      .text(function(d) {return (d.group == 8)?d.name:''});
+      .attr("font-size", 3)
+      .on("click", click)
+      .text(function(d) {return (d.group == 1)?d.name:''});
   
   textA.exit().remove();
-
-
 }
 
 function tick() {
@@ -116,21 +101,19 @@ function tick() {
       .attr("y", function(d) { return d.y; })
 }
 
-function click_add(d) {
+function click(d) {
+  //console.log(d);
   console.log(d.name)
+  
   current = "test";
-  target = {"name":current, group:8, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
+  target = {"name":current, group:1, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
   target1 = {"name":current, group:1, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
   root["nodes"].push(target);
   root["nodes"].push(target1);
   root["links"].push({"target":d.index,"source":root["nodes"][root["nodes"].length -2], "value":1});
   root["links"].push({"target":d.index,"source":root["nodes"][root["nodes"].length -1], "value":1});
-  update();
-}
 
-function click_del(d) {
-
-  console.log(d.name)
+  /*
   root.nodes.splice(d.index, 1);
   
   var adj = [];
@@ -146,11 +129,12 @@ function click_del(d) {
   for (i = 0; i < o_adjl; i++){
     root.links.splice(adj[i]-vn, 1);
     vn++;
-  }
+  }*/
+
+  //console.log(root);
   update();
+  //console.log(root);
 }
-
-
 function mouseover(d) {
   node.append("svg:text")
   .attr("x", d.x)
@@ -159,7 +143,4 @@ function mouseover(d) {
   //console.log(d.x + d.y + d.name);
 }
 
-</script>
-<script type="text/javascript" >
-        $("#top_b1").bind("click", function() {$("#top_b1").hide();$(".ctrl").append("div");}); 
 </script>
