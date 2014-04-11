@@ -42,7 +42,7 @@ width:800px;
 
 <div class = "wrapper" ><p id = "chart"><div>
 <!--<script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>-->
-<script src="js/d3.js"></script>
+<script src="js/d3_v3.js"></script>
 <script src="js/sankey.js"></script>
 <script>
 
@@ -50,65 +50,82 @@ var margin = {top: 1, right: 51, bottom: 6, left: 1},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var formatNumber = d3.format(",.0f"),
-    format = function(d) { return formatNumber(d) + " Paths"; },
-    color = d3.scale.category20();
+//var formatNumber = d3.format(",.0f"),
+ //   format = function(d) { return formatNumber(d) + " Paths"; },
+  //  color = d3.scale.category20();
+
+
+
+
+
+
+//console.log(path)
+
+d3.json("data/jiudianyuding_agoda_7.json", function(error, energy) {
+root = energy
+update();
+});
+
+  
+function update(){
 
 var svg = d3.select("#chart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var sankey = d3.sankey()
+
+ var sankey = d3.sankey()
     .nodeWidth(5)
     .nodePadding(15)
     .size([width, height]);
 
-var path = sankey.link();
-console.log(path)
-
-//d3.json("data/jiudian_agoda_6_text.json", function(energy) {
-d3.json("data/jiudianyuding_agoda_7.json", function(energy) {
-//d3.json("data/energy.json", function(energy) {
-//d3.json("energy.json", function(energy) {
+  var path = sankey.link();
 
   sankey
-      .nodes(energy.nodes)
-      .links(energy.links)
+      .nodes(root.nodes)
+      .links(root.links)
       .layout(32);
 
   var link = svg.append("g").selectAll(".link")
-      .data(energy.links)
-    .enter().append("path")
+      .data(root.links);
+      
+  link.enter().append("path")
       .attr("class", "link")
       .attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      .sort(function(a, b) { return b.dy - a.dy; });
+      //.sort(function(a, b) { return b.dy - a.dy; })
+      .on("click", click_del);
 
-  link.append("title")
-      .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+  link.exit().remove();
+   
+
+//  link.append("title")
+ //     .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+
 
   var node = svg.append("g").selectAll(".node")
-      .data(energy.nodes)
-    .enter().append("g")
+      .data(root.nodes);
+      
+  node.enter().append("g")
       .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-    .call(d3.behavior.drag()
-      .origin(function(d) { return d; })
-      .on("dragstart", function() { this.parentNode.appendChild(this); })
-      .on("drag", dragmove));
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+      
+   // .call(d3.behavior.drag()
+     // .origin(function(d) { return d; })
+      //.on("dragstart", function() { this.parentNode.appendChild(this); })
+      //.on("drag", dragmove));
+  
+
 
   node.append("rect")
+      .attr("class", "node")
       .attr("height", function(d) { return d.dy  ;})
-      //.attr("height", 10)
       .attr("width", sankey.nodeWidth())
-      //.style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
-      .style("fill", function(d) { return d.color;})
-     // .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
-    .append("title")
-      //.text(function(d) { return d.name + "\n" + format(d.value); });
-      .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
+      .style("fill", function(d) { return d.color;});
+    //.append("title")
+     // .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
 
   node.append("text")
       .attr("x", -6)
@@ -117,15 +134,33 @@ d3.json("data/jiudianyuding_agoda_7.json", function(energy) {
       .attr("text-anchor", "end")
       .attr("transform", null)
       .text(function(d) { return d.name; })
-    //.filter(function(d) { return d.x < width / 2; })
-      .attr("x", 6 + sankey.nodeWidth())
+     .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start");
+  node.exit().remove();
+  
 
-  function dragmove(d) {
-    d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
-    sankey.relayout();
-    link.attr("d", path);
-  }
-});
+ // function dragmove(d) {
+   // d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
+   // sankey.relayout();
+   // link.attr("d", path);
+  //}
+}
+
+
+function click_del(d) {
+ // console.log(d.name);
+  d3.select("svg").remove();
+  var tl = root.links.length;
+  var cot = 0;
+  var adj = [];
+  for (i = 0; i < tl; i++){
+    //console.log(root.links[i].value);
+    tm = root.links[i].value;
+   if (tm<5){adj.push(i)}
+  };
+  console.log(adj)
+  root.links.splice(0, 1);
+  update();
+}
 
 </script>

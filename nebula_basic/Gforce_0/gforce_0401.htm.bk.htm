@@ -64,12 +64,10 @@ function update(){
       .links(root.links)
       .start();
 
-  console.log(root.nodes);
-
   link = svg.selectAll(".link")
       .data(root.links);
     
-  link.enter().insert("svg:line", ".link")
+  link.enter().insert("svg:line", ".node")
       .attr("class", "link")
   
   link.exit().remove();
@@ -78,11 +76,12 @@ function update(){
   
   node = svg.selectAll(".node")
       .data(root.nodes);
+  
+  //d3.select(".node").remove();
 
   node.enter().append("svg:circle")
       .attr("class", "node")
-
-  node.attr("r", function(d) {return d.group})
+      .attr("r", function(d) {return d.group})
       .on("click", click_del)
       //.on("mouseover", mouseover);
       .call(force.drag);
@@ -136,10 +135,8 @@ function click_add(d) {
 
 function click_del(d) {
 
-  console.log(d.name);
-  
-  root.nodes.splice(d.index,1);
-  console.log(root.nodes);
+  console.log(d.name)
+  root.nodes.splice(d.index, 1);
   
   var adj = [];
   var o_adjl;
