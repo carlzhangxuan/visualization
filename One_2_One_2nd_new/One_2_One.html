@@ -96,8 +96,8 @@ var svg = d3.select("#chart").append("svg")
 
   link.attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      .sort(function(a, b) { return b.dy - a.dy; })
-      .on("click", click_del);
+      .sort(function(a, b) { return b.dy - a.dy; });
+      //.on("click", click_del);
 
   link.exit().remove();
    
@@ -112,6 +112,7 @@ var svg = d3.select("#chart").append("svg")
   node.enter().append("g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+      .on("click", click_del)
       .call(d3.behavior.drag()
     .origin(function(d) { return d; })
     .on("dragstart", function() { this.parentNode.appendChild(this); })
@@ -151,7 +152,11 @@ var svg = d3.select("#chart").append("svg")
 
 
 function click_del(d) {
+  d3.select("svg").remove();
+  console.log(root.nodes)
   console.log(d);
+  root.nodes.splice(90,1);
+  update();
 }
 
 </script>
