@@ -37,11 +37,15 @@ width:800px;
   stroke-opacity: .5;
 }
 
+.link_inv{
+      display: none;
+    visibility: hidden;
+}
+
 </style>
 <body>
 
 <div class = "wrapper" ><p id = "chart"><div>
-<!--<script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>-->
 <script src="js/d3_v3.js"></script>
 <script src="js/sankey.js"></script>
 <script>
@@ -54,14 +58,10 @@ var margin = {top: 1, right: 51, bottom: 6, left: 1},
  //   format = function(d) { return formatNumber(d) + " Paths"; },
   //  color = d3.scale.category20();
 
-
-
-
-
-
 //console.log(path)
 
 d3.json("data/jiudianyuding_agoda_7.json", function(error, energy) {
+//console.log(energy);
 root = energy
 update();
 });
@@ -82,20 +82,21 @@ var svg = d3.select("#chart").append("svg")
     .size([width, height]);
 
   var path = sankey.link();
-
   sankey
       .nodes(root.nodes)
       .links(root.links)
-      .layout(32);
+      .layout();
 
   var link = svg.append("g").selectAll(".link")
       .data(root.links);
-      
+
+
   link.enter().append("path")
-      .attr("class", "link")
-      .attr("d", path)
+      .attr("class", function(d){return d.value > 5? "link":"link_inv";})
+
+  link.attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      //.sort(function(a, b) { return b.dy - a.dy; })
+      .sort(function(a, b) { return b.dy - a.dy; })
       .on("click", click_del);
 
   link.exit().remove();
@@ -110,12 +111,11 @@ var svg = d3.select("#chart").append("svg")
       
   node.enter().append("g")
       .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-      
-   // .call(d3.behavior.drag()
-     // .origin(function(d) { return d; })
-      //.on("dragstart", function() { this.parentNode.appendChild(this); })
-      //.on("drag", dragmove));
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+      .call(d3.behavior.drag()
+    .origin(function(d) { return d; })
+    .on("dragstart", function() { this.parentNode.appendChild(this); })
+    .on("drag", dragmove));
   
 
 
@@ -124,7 +124,7 @@ var svg = d3.select("#chart").append("svg")
       .attr("height", function(d) { return d.dy  ;})
       .attr("width", sankey.nodeWidth())
       .style("fill", function(d) { return d.color;});
-    //.append("title")
+     //.append("title")
      // .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
 
   node.append("text")
@@ -139,28 +139,16 @@ var svg = d3.select("#chart").append("svg")
   node.exit().remove();
   
 
- // function dragmove(d) {
-   // d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
-   // sankey.relayout();
-   // link.attr("d", path);
-  //}
+  function dragmove(d) {
+    d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
+    sankey.relayout();
+    link.attr("d", path);
+  }
 }
 
 
 function click_del(d) {
- // console.log(d.name);
-  d3.select("svg").remove();
-  var tl = root.links.length;
-  var cot = 0;
-  var adj = [];
-  for (i = 0; i < tl; i++){
-    //console.log(root.links[i].value);
-    tm = root.links[i].value;
-   if (tm<5){adj.push(i)}
-  };
-  console.log(adj)
-  root.links.splice(0, 1);
-  update();
+  console.log(d);
 }
 
 </script>

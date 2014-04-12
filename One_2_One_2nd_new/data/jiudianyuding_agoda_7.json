@@ -1,9 +1,13 @@
 {"nodes":[
 {"name":"酒店预订", "color":"#D9E5FF"},
 {"name":"去哪儿", "color":"#A4C6FF"},
+{"name":"亚航", "color":"#75A9FF"},
+{"name":"booking", "color":"#136fff"},
+{"name":"携程", "color":"#4689FF"},
 {"name":"同程", "color":"#136fff"}
 ],
 "links":[
 {"source":0,"target":1,"value":7},
-{"source":0,"target":2,"value":4}
+{"source":1,"target":2,"value":6},
+{"source":1,"target":4,"value":9}
 ]}
