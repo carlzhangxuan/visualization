@@ -51,7 +51,7 @@ d3.sankey = function() {
   };
 
   sankey.link = function() {
-    var curvature = .5;
+    var curvature = 0.5;
 
     function link(d) {
       var x0 = d.source.x + d.source.dx,
@@ -99,7 +99,8 @@ d3.sankey = function() {
       node.value = Math.max(
         d3.sum(node.sourceLinks, value),
         d3.sum(node.targetLinks, value)
-      );
+        );
+      //node.value = d3.sum(node.sourceLinks, value) + d3.sum(node.targetLinks, value);
     });
   }
 
@@ -163,9 +164,9 @@ d3.sankey = function() {
     initializeNodeDepth();
     resolveCollisions();
     for (var alpha = 1; iterations > 0; --iterations) {
-      relaxRightToLeft(alpha *= .99);
-      resolveCollisions();
-      relaxLeftToRight(alpha);
+      //relaxRightToLeft(alpha *= .99);
+      //resolveCollisions();
+      //relaxLeftToRight(alpha);
       resolveCollisions();
     }
 

@@ -33,7 +33,7 @@ def get_sorting_info(fn, sep = '\t'):
 def get_listing(l):
 	for list_ in l:
 		for item in list_:
-			#print item[0], item[1]
+			print item[0], item[1]
 			yield item[0]
 
 def make_json_node(l):
@@ -55,11 +55,12 @@ def make_json_node(l):
 			color = '"#A4C6FF"'	
 		else:
 			color = '"#D9E5FF"'
-		#con.append('{"name":"'+word.split('_')[0]+'", "color":'+color+'}')
-		con.append('{"name":"'+word+'", "color":'+color+'}')
+		con.append('{"name":"'+word.split('_')[0]+'", "color":'+color+'}')
+		#con.append('{"name":"'+str(my_dict[word])+'", "color":'+color+', "count":'+color+'}')
 	return (con, my_dict)
 
 def make_json_link(fn, my_dict):
+	import operator
 	my_dict_2 = {}
 	con_2 = []
 	for line in open(fn):
@@ -69,8 +70,9 @@ def make_json_link(fn, my_dict):
 				my_dict_2[(my_dict[case[i]], my_dict[case[i + 1]])] = 1
 			else:
 				my_dict_2[(my_dict[case[i]], my_dict[case[i + 1]])] += 1
-	for key in my_dict_2:
-		con_2.append('{"source":'+str(key[0])+',"target":'+str(key[1])+',"value":'+str(my_dict_2[key])+'}')
+	sorted_md = sorted(my_dict_2.iteritems(), key=operator.itemgetter(0))
+	for key in sorted_md:
+		con_2.append('{"source":'+str(key[0][0])+',"target":'+str(key[0][1])+',"value":'+str(key[1])+'}')
 	return con_2
 
 def print_main(fn):

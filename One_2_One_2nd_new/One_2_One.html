@@ -92,11 +92,11 @@ var svg = d3.select("#chart").append("svg")
 
 
   link.enter().append("path")
-      .attr("class", function(d){return d.value > 0? "link":"link_inv";})
+      .attr("class", function(d){return d.value > 10? "link":"link_inv";})
 
   link.attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      //.sort(function(a, b) { return b.dy - a.dy; })
+      .sort(function(a, b) { return b.dy - a.dy; })
       .on("click", click_del);
 
   link.exit().remove();
