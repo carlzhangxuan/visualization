@@ -85,18 +85,18 @@ var svg = d3.select("#chart").append("svg")
   sankey
       .nodes(root.nodes)
       .links(root.links)
-      .layout();
+      .layout(32);
 
   var link = svg.append("g").selectAll(".link")
       .data(root.links);
 
 
   link.enter().append("path")
-      .attr("class", function(d){return d.value > 5? "link":"link_inv";})
+      .attr("class", function(d){return d.value > 0? "link":"link_inv";})
 
   link.attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      .sort(function(a, b) { return b.dy - a.dy; })
+      //.sort(function(a, b) { return b.dy - a.dy; })
       .on("click", click_del);
 
   link.exit().remove();

@@ -1,11 +1,5 @@
-#fn = 'jiudianyuding_agoda_7.path'
-
-#for line in open(fn):
-#	line_l = line.strip('\n').split('\t')
-#	print line_l[0]+'_0\t'+line_l[1]+'_1\t'+line_l[2]+'_2\t'+line_l[3]+'_3\t'+line_l[4]+'_4\t'+line_l[5]+'_5\t'+line_l[6]+'_6\t'
 
 fn = 'jiudianyuding_agoda_7_p.path'
-
 
 head = """{"nodes":["""
 mid = """],
@@ -48,7 +42,6 @@ for line in open(fn):
 			my_dict_2[(my_dict[case[i]], my_dict[case[i + 1]])] += 1
 con2 = []
 for key in my_dict_2:
-#for key, v in sorted(my_dict_2.items(), key =lambda x:x[1], reverse=True):
 	con2.append('{"source":'+str(key[0])+',"target":'+str(key[1])+',"value":'+str(my_dict_2[key])+'}')
 print ',\n'.join(con2)
 print end
