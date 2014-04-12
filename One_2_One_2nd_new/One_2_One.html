@@ -54,9 +54,9 @@ var margin = {top: 1, right: 51, bottom: 6, left: 1},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-//var formatNumber = d3.format(",.0f"),
- //   format = function(d) { return formatNumber(d) + " Paths"; },
-  //  color = d3.scale.category20();
+var formatNumber = d3.format(",.0f"),
+    format = function(d) { return formatNumber(d) + " Paths"; },
+    color = d3.scale.category20();
 
 //console.log(path)
 
@@ -102,8 +102,8 @@ var svg = d3.select("#chart").append("svg")
   link.exit().remove();
    
 
-//  link.append("title")
- //     .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+  link.append("title")
+  .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
 
 
   var node = svg.append("g").selectAll(".node")
@@ -124,8 +124,9 @@ var svg = d3.select("#chart").append("svg")
       .attr("height", function(d) { return d.dy  ;})
       .attr("width", sankey.nodeWidth())
       .style("fill", function(d) { return d.color;});
-     //.append("title")
-     // .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
+     
+  node.append("title")
+    .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
 
   node.append("text")
       .attr("x", -6)
@@ -134,7 +135,9 @@ var svg = d3.select("#chart").append("svg")
       .attr("text-anchor", "end")
       .attr("transform", null)
       .text(function(d) { return d.name; })
-     .attr("x", 6 + sankey.nodeWidth())
+      .attr("font-family", "Microsoft YaHei")
+      .attr("font-size", 14)
+      .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start");
   node.exit().remove();
   
