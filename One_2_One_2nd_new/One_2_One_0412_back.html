@@ -66,7 +66,10 @@ var formatNumber = d3.format(",.0f"),
     format = function(d) { return formatNumber(d) + " Paths"; },
     color = d3.scale.category20();
 
+//console.log(path)
+
 d3.json("data/jiudianyuding_agoda_7.json", function(error, energy) {
+//console.log(energy);
 root = energy
 update();
 });
@@ -150,6 +153,7 @@ var svg = d3.select("#chart").append("svg")
       .attr("font-family", "Microsoft YaHei")
       .attr("font-size", 14)
       .attr("x", 6 + sankey.nodeWidth() + rect_w)
+      //.attr("x", 6 + rect_w)
       .attr("text-anchor", "start");
   node.exit().remove();
   
@@ -164,17 +168,28 @@ var svg = d3.select("#chart").append("svg")
 
 function click_del_link(d) {
   d3.select("svg").remove();
+  //console.log(root.nodes);
+  //console.log(root.links);
+  console.log(d);
+  console.log(d.index);
   root.links.splice(d.index,1);
   update();
 }
 
 function click_del_node(d) {
   d3.select("svg").remove();
+  //console.log(root.nodes);
+  //console.log(root.links);
+  //console.log(d);
+  //console.log(d.index);
+  //console.log(d.sourceLinks);
+  //console.log(d.targetLinks);
   
   //cleaning of target/source links
   var ts_list = [];
   d.targetLinks.forEach(function(link){console.log(link.index);ts_list.push(link.index)});
   d.sourceLinks.forEach(function(link){console.log(link.index);ts_list.push(link.index)});
+  //console.log(ts_list);
   var vn = 0;
   var o_adjl;
   o_adjl = ts_list.length;
@@ -183,6 +198,7 @@ function click_del_node(d) {
     vn++;
   }
   //cleaning of itself
+  //root.links.splice(link.index,1);
   root.nodes.splice(d.index,1);
   update();
 }
