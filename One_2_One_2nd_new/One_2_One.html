@@ -27,6 +27,11 @@ width:800px;
   text-shadow: 0 1px 0 #fff;
 }
 
+.node_inv text {
+      display: none;
+    visibility: hidden;
+}
+
 .link {
   fill: none;
   stroke: #000;
@@ -92,7 +97,7 @@ var svg = d3.select("#chart").append("svg")
 
 
   link.enter().append("path")
-      .attr("class", function(d){return d.value > 0? "link":"link_inv";})
+      .attr("class", function(d){return d.value > 10? "link":"link_inv";})
 
   link.attr("d", path)
       .style("stroke-width", function(d) { return Math.max(1, d.dy); });
@@ -110,7 +115,7 @@ var svg = d3.select("#chart").append("svg")
       .data(root.nodes);
       
   node.enter().append("g")
-      .attr("class", "node")
+      .attr("class", function(d){return d.value > 10? "node":"node_inv";})
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
       .on("click", click_del_node)
       .call(d3.behavior.drag()
@@ -124,8 +129,9 @@ var svg = d3.select("#chart").append("svg")
       .attr("class", "node")
       .attr("height", function(d) { return d.dy  ;})
       .attr("width", sankey.nodeWidth())
-     // .attr("height", function(d){return d.value;}) 
-      .style("fill", function(d) { return d.color;});
+      //.attr("height", 10)
+     // .attr("height", function(d){return (d.value/3);}) 
+      .style("fill", function(d) {return d.value > 10? d.color:"FFF";});
      
   node.append("title")
     .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
@@ -140,7 +146,6 @@ var svg = d3.select("#chart").append("svg")
       .attr("font-family", "Microsoft YaHei")
       .attr("font-size", 14)
       .attr("x", 6 + sankey.nodeWidth())
-      .on("click", click_del_node)
       .attr("text-anchor", "start");
   node.exit().remove();
   

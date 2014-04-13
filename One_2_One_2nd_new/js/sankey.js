@@ -110,6 +110,7 @@ d3.sankey = function() {
         d3.sum(node.targetLinks, value)
         );
       //node.value = d3.sum(node.sourceLinks, value) + d3.sum(node.targetLinks, value);
+      //if (node.value < 10){node.value = 10;} 
     });
   }
 
@@ -295,6 +296,9 @@ d3.sankey = function() {
   }
 
   function value(link) {
+    console.log(link.value)
+    //if (link.value <= 20){return link.value + 10;}
+    //else{return link.value;}
     return link.value;
   }
 
