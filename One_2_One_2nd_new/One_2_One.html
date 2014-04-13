@@ -88,15 +88,15 @@ var svg = d3.select("#chart").append("svg")
 
 
  var sankey = d3.sankey()
-    .nodeWidth(20)
-    .nodePadding(2)
+    .nodeWidth(10)
+    .nodePadding(10)
     .size([width, height]);
 
   var path = sankey.link();
   sankey
       .nodes(root.nodes)
       .links(root.links)
-      .layout(32);
+      .layout();
 
   var link = svg.append("g").selectAll(".link")
       .data(root.links);
