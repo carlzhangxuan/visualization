@@ -42,19 +42,19 @@ def make_json_node(l):
 	for (num, (word, count)) in enumerate(l):
 		my_dict[word] = num
 		if word.split('_')[1] == '5':
-			color = '"#0068b2"'
+			color = '"#0070C0"'
 		elif word.split('_')[1] == '6':
-			color = '"#0060a5"'
+			color = '"orange"'
 		elif word.split('_')[1] == '4':
-			color = '"#0072c4"'
+			color = '"#136fff"'
 		elif word.split('_')[1] == '3':
-			color = '"#0078ce"'
+			color = '"#4689FF"'
 		elif word.split('_')[1] == '2':
-			color = '"#0082e0"'	
+			color = '"#75A9FF"'	
 		elif word.split('_')[1] == '1':
-			color = '"#0088ea"'	
+			color = '"#A4C6FF"'	
 		else:
-			color = '"#0094ff"'
+			color = '"#D9E5FF"'
 		#con.append('{"name":"'+word.split('_')[0]+'", "value":'+str(count)+'}')
 		con.append('{"name":"'+word.split('_')[0]+'", "color":'+color+', "value":'+str(count)+'}')
 	return (con, my_dict)

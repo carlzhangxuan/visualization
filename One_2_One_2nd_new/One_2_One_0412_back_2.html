@@ -47,7 +47,7 @@ width:800px;
     //visibility: hidden;
   fill: none;
   stroke: #000;
-  stroke-opacity: .05;
+  stroke-opacity: .02;
 }
 
 </style>
@@ -89,7 +89,7 @@ var svg = d3.select("#chart").append("svg")
 
  var sankey = d3.sankey()
     .nodeWidth(20)
-    .nodePadding(2)
+    .nodePadding(5)
     .size([width, height]);
 
   var path = sankey.link();
