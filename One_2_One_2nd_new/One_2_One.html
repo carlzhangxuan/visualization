@@ -43,8 +43,11 @@ width:800px;
 }
 
 .link_inv{
-      display: none;
-    visibility: hidden;
+    //  display: none;
+    //visibility: hidden;
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .02;
 }
 
 </style>
@@ -76,7 +79,7 @@ function update(){
 
 var node_t = 0;
 var text_t = 40;
-var link_t = 0;
+var link_t = 11;
 var mini_dy = 1;
 var rect_w = 0;
 
@@ -135,7 +138,7 @@ var svg = d3.select("#chart").append("svg")
       .attr("class", "node")
       .attr("height", function(d) { return d.dy >= mini_dy? d.dy:mini_dy;})
       .attr("width", sankey.nodeWidth() + rect_w)
-      .style("fill", function(d) {return d.value >= node_t? d.color:"FFF";});
+      .style("fill", function(d) {return d.value >= node_t? d.color:"#fcfcfa";});
      
   node.append("title")
     .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
