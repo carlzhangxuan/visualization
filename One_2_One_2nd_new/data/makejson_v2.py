@@ -33,13 +33,13 @@ def get_sorting_info(fn, sep = '\t'):
 def get_listing(l):
 	for list_ in l:
 		for item in list_:
-			print item[0], item[1]
-			yield item[0]
+			#print item[0], item[1]
+			yield (item[0], item[1])
 
 def make_json_node(l):
 	my_dict = {}
 	con = []
-	for (num, word) in enumerate(l):
+	for (num, (word, count)) in enumerate(l):
 		my_dict[word] = num
 		if word.split('_')[1] == '5':
 			color = '"#0070C0"'
@@ -55,8 +55,8 @@ def make_json_node(l):
 			color = '"#A4C6FF"'	
 		else:
 			color = '"#D9E5FF"'
-		con.append('{"name":"'+word.split('_')[0]+'", "color":'+color+'}')
-		#con.append('{"name":"'+str(my_dict[word])+'", "color":'+color+', "count":'+color+'}')
+		#con.append('{"name":"'+word.split('_')[0]+'", "value":'+str(count)+'}')
+		con.append('{"name":"'+word.split('_')[0]+'", "color":'+color+', "value":'+str(count)+'}')
 	return (con, my_dict)
 
 def make_json_link(fn, my_dict):

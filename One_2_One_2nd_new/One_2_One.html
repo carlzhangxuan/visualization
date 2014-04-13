@@ -92,12 +92,12 @@ var svg = d3.select("#chart").append("svg")
 
 
   link.enter().append("path")
-      .attr("class", function(d){return d.value > 10? "link":"link_inv";})
+      .attr("class", function(d){return d.value > 0? "link":"link_inv";})
 
   link.attr("d", path)
-      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      .sort(function(a, b) { return b.dy - a.dy; });
-      //.on("click", click_del);
+      .style("stroke-width", function(d) { return Math.max(1, d.dy); });
+      //.sort(function(a, b) { return b.dy - a.dy; });
+      //.on("click", click_del_link);
 
   link.exit().remove();
    
@@ -112,7 +112,7 @@ var svg = d3.select("#chart").append("svg")
   node.enter().append("g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-      .on("click", click_del)
+      .on("click", click_del_node)
       .call(d3.behavior.drag()
     .origin(function(d) { return d; })
     .on("dragstart", function() { this.parentNode.appendChild(this); })
@@ -124,6 +124,7 @@ var svg = d3.select("#chart").append("svg")
       .attr("class", "node")
       .attr("height", function(d) { return d.dy  ;})
       .attr("width", sankey.nodeWidth())
+     // .attr("height", function(d){return d.value;}) 
       .style("fill", function(d) { return d.color;});
      
   node.append("title")
@@ -139,6 +140,7 @@ var svg = d3.select("#chart").append("svg")
       .attr("font-family", "Microsoft YaHei")
       .attr("font-size", 14)
       .attr("x", 6 + sankey.nodeWidth())
+      .on("click", click_del_node)
       .attr("text-anchor", "start");
   node.exit().remove();
   
@@ -151,11 +153,40 @@ var svg = d3.select("#chart").append("svg")
 }
 
 
-function click_del(d) {
+function click_del_link(d) {
   d3.select("svg").remove();
-  console.log(root.nodes)
+  //console.log(root.nodes);
+  //console.log(root.links);
   console.log(d);
-  root.nodes.splice(90,1);
+  console.log(d.index);
+  root.links.splice(d.index,1);
+  update();
+}
+
+function click_del_node(d) {
+  d3.select("svg").remove();
+  //console.log(root.nodes);
+  //console.log(root.links);
+  //console.log(d);
+  //console.log(d.index);
+  //console.log(d.sourceLinks);
+  //console.log(d.targetLinks);
+  
+  //cleaning of target/source links
+  var ts_list = [];
+  d.targetLinks.forEach(function(link){console.log(link.index);ts_list.push(link.index)});
+  d.sourceLinks.forEach(function(link){console.log(link.index);ts_list.push(link.index)});
+  //console.log(ts_list);
+  var vn = 0;
+  var o_adjl;
+  o_adjl = ts_list.length;
+  for (i = 0; i < o_adjl; i++){
+    root.links.splice(ts_list[i]-vn, 1);
+    vn++;
+  }
+  //cleaning of itself
+  //root.links.splice(link.index,1);
+  root.nodes.splice(d.index,1);
   update();
 }
 

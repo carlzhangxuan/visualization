@@ -79,26 +79,19 @@ d3.sankey = function() {
   // Populate the sourceLinks and targetLinks for each node.
   // Also, if the source and target are not objects, assume they are indices.
   function computeNodeLinks() {
-    var node_c =0;
+    
     nodes.forEach(function(node) {
       node.sourceLinks = [];
       node.targetLinks = [];
-      node.index = node_c;
-      node_c++;
     });
     
-    var link_c = 0;
     links.forEach(function(link) {
       var source = link.source,
           target = link.target;
-      //console.log(link)
       if (typeof source === "number") source = link.source = nodes[link.source];
       if (typeof target === "number") target = link.target = nodes[link.target];
-      link.index = link_c;
-      link_c++;
       source.sourceLinks.push(link);
       target.targetLinks.push(link);
-      //console.log(link)
     });
   }
 
