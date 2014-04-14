@@ -54,9 +54,25 @@ width:800px;
 <body>
 
 <div class = "wrapper" ><p id = "chart"><div>
+<select id="changeLine">
+  <option>0</option>
+  <option>5</option>
+  <option>11</option>
+</select>
 <script src="js/d3_v3.js"></script>
 <script src="js/sankey.js"></script>
 <script>
+window.onload=function(){
+  var changeLine=document.getElementById("changeLine");
+
+  changeLine.onchange=function(){
+  d3.select("svg").remove();
+   update(changeLine.value);
+
+  }
+
+}
+
 
 var margin = {top: 1, right: 51, bottom: 6, left: 1},
     width = 800 - margin.left - margin.right,
@@ -68,15 +84,16 @@ var formatNumber = d3.format(",.0f"),
 
 d3.json("data/jiudianyuding_agoda_7.json", function(error, energy) {
 root = energy
-update();
+update(11);
 });
 
   
-function update(){
+function update(num){
+
 
 var node_t = 0;
-var text_t = 40;
-var link_t = 11;
+var text_t = 0;
+var link_t = num;
 var mini_dy = 1;
 var rect_w = 0;
 
@@ -184,7 +201,7 @@ function click_del_node(d) {
   }
   //cleaning of itself
   root.nodes.splice(d.index,1);
-  update();
+  update(changeLine.value);
 }
 
 </script>
