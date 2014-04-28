@@ -76,13 +76,16 @@ window.onload=function(){
 
 var margin = {top: 1, right: 51, bottom: 6, left: 1},
     width = 800 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 300 - margin.top - margin.bottom;
 
 var formatNumber = d3.format(",.0f"),
     format = function(d) { return formatNumber(d) + " Paths"; },
     color = d3.scale.category20();
 
-d3.json("data/jiudianyuding_agoda_7.json", function(error, energy) {
+var name = encodeURIComponent("jiudianyuding_agoda_7")
+//var name = decodeURI("测试")
+//var name = "测试"
+d3.json("data/"+name+".json", function(error, energy) {
 root = energy
 update(0);
 });
@@ -92,7 +95,7 @@ function update(num){
 
 
 var node_t = 0;
-var text_t = 0;
+var text_t = num;
 var link_t = num;
 var mini_dy = 1;
 var rect_w = 0;
