@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Path2</title>
+<style>
+body {
+  background: #fcfcfa;
+  color: #900000;
+  font-family: "Microsoft YaHei";
+  margin: 50px auto 0 auto;
+}
+#chart {
+  height: 600px;
+}
+
+.wrapper{
+width:800px;
+  margin:0 auto;
+}
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.node_inv text {
+    display: none;
+    visibility: hidden;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .25;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+
+.link_inv{
+    //  display: none;
+    //visibility: hidden;
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .05;
+}
+
+</style>
+<body>
+
+<div class = "wrapper" ><p id = "chart"><div>
+<select id="changeLine">
+  <option>0</option>
+  <option>5</option>
+  <option>11</option>
+</select>
+<script src="js/d3_v3.js"></script>
+<script src="js/sankey.js"></script>
+<script>
+window.onload=function(){
+  var changeLine=document.getElementById("changeLine");
+
+  changeLine.onchange=function(){
+  d3.select("svg").remove();
+   update(changeLine.value);
+
+  }
+
+}
+
+
+var margin = {top: 1, right: 51, bottom: 6, left: 1},
+    width = 800 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+var formatNumber = d3.format(",.0f"),
+    format = function(d) { return formatNumber(d) + " Paths"; },
+    color = d3.scale.category20();
+
+var name = encodeURIComponent("jiudianyuding_agoda_7")
+//var name = decodeURI("测试")
+//var name = "测试"
+d3.json("data/"+name+".json", function(error, energy) {
+root = energy
+update(0);
+});
+
+  
+function update(num){
+
+
+var node_t = 0;
+var text_t = num;
+var link_t = num;
+var mini_dy = 1;
+var rect_w = 0;
+
+var svg = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+ var sankey = d3.sankey()
+    .nodeWidth(10)
+    .nodePadding(10)
+    .size([width, height]);
+
+  var path = sankey.link();
+  sankey
+      .nodes(root.nodes)
+      .links(root.links)
+      .layout();
+
+  var link = svg.append("g").selectAll(".link")
+      .data(root.links);
+
+
+  link.enter().append("path")
+      .attr("class", function(d){return d.value > link_t? "link":"link_inv";})
+
+  link.attr("d", path)
+      .style("stroke-width", function(d) { return Math.max(1, d.dy); });
+      //.sort(function(a, b) { return b.dy - a.dy; });
+      //.on("click", click_del_link);
+
+  link.exit().remove();
+   
+
+  link.append("title")
+  .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+
+
+  var node = svg.append("g").selectAll(".node")
+      .data(root.nodes);
+      
+  node.enter().append("g")
+      .attr("class", function(d){return d.value > text_t? "node":"node_inv";})
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+      .on("click", click_del_node)
+      .call(d3.behavior.drag()
+    .origin(function(d) { return d; })
+    .on("dragstart", function() { this.parentNode.appendChild(this); })
+    .on("drag", dragmove));
+  
+
+
+  node.append("rect")
+      .attr("class", "node")
+      .attr("height", function(d) { return d.dy >= mini_dy? d.dy:mini_dy;})
+      .attr("width", sankey.nodeWidth() + rect_w)
+      .style("fill", function(d) {return d.value >= node_t? d.color:"#fcfcfa";});
+     
+  node.append("title")
+    .text(function(d) { return d.name + "\n" + format(d.value) + "\n后续加入<" + d.name + ">相关词包信息";});
+
+  node.append("text")
+      .attr("x", -6)
+      .attr("y", function(d) { return d.dy / 2; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "end")
+      .attr("transform", null)
+      .text(function(d) { return d.name; })
+      .attr("font-family", "Microsoft YaHei")
+      .attr("font-size", 14)
+      .attr("x", 6 + sankey.nodeWidth() + rect_w)
+      .attr("text-anchor", "start");
+  node.exit().remove();
+  
+
+  function dragmove(d) {
+    d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
+    sankey.relayout();
+    link.attr("d", path);
+  }
+}
+
+
+function click_del_link(d) {
+  d3.select("svg").remove();
+  root.links.splice(d.index,1);
+  update();
+}
+
+function click_del_node(d) {
+  d3.select("svg").remove();
+  
+  //cleaning of target/source links
+  var ts_list = [];
+  d.targetLinks.forEach(function(link){console.log(link.index);ts_list.push(link.index)});
+  d.sourceLinks.forEach(function(link){console.log(link.index);ts_list.push(link.index)});
+  var vn = 0;
+  var o_adjl;
+  o_adjl = ts_list.length;
+  for (i = 0; i < o_adjl; i++){
+    root.links.splice(ts_list[i]-vn, 1);
+    vn++;
+  }
+  //cleaning of itself
+  root.nodes.splice(d.index,1);
+  update(changeLine.value);
+}
+
+</script>
