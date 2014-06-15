@@ -45,7 +45,7 @@ var button = d3.select("body").append("div")
       .attr("class", "ctrl")
       .attr("font-family", "Arial")
       .attr("fill-opacity", 0.9)
-      .attr("font-size", 5)
+      .attr("font-size", 15)
       .attr("id", "top_b1")
       .text("adding...");
 
@@ -82,9 +82,10 @@ function update(){
   node.enter().append("svg:circle")
       .attr("class", "node")
 
-  node.attr("r", function(d) {return d.group})
-      .on("click", click_del)
+  node.attr("r", function(d) {return (9 - d.group + 1)/1.5})
+      .on("click", click_add)
       //.on("mouseover", mouseover);
+      //.style("fill", function(d) { return color(d.group); })
       .call(force.drag);
   node.exit().remove();
       
@@ -99,10 +100,10 @@ function update(){
       .attr("class", "text")
       .attr("font-family", "Arial")
       .attr("fill-opacity", 0.9)
-      .attr("font-size", 5)
+      .attr("font-size", 13)
       //.on("click", click_)
      // .text(function(d){return d.name})
-      //.text(function(d) {return (d.group == 8)?d.name:''});
+      .text(function(d) {return (d.group == 2)?d.name:''});
   
   textA.exit().remove();
 
@@ -124,9 +125,10 @@ function tick() {
 
 function click_add(d) {
   console.log(d.name)
-  current = "test";
-  target = {"name":current, group:8, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
-  target1 = {"name":current, group:1, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
+  current_0 = "纽约";
+  current_1 = "上海";
+  target = {"name":current_0, group:2, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
+  target1 = {"name":current_1, group:2, "x":d.x, "y":d.y, "px":d.px, "py":d.py, "fixed":0, "weight":3};
   root["nodes"].push(target);
   root["nodes"].push(target1);
   root["links"].push({"target":d.index,"source":root["nodes"][root["nodes"].length -2], "value":1});
